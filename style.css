@@ -1,0 +1,78 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+header p {
+    font-style: italic;
+    color: #666;
+}
+
+.intro, .research, .teaching, .seminars {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+p, ul {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Styling for PDF links */
+.pdf-links a {
+    color: #003366; /* Link color */
+    text-decoration: none;
+    margin-right: 5px; /* Space between 'View' and 'Download' */
+}
+
+.pdf-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Optional: Different styling for 'Download' links */
+.pdf-links a[download] {
+    color: #d9534f; /* Different color for download links, e.g., red */
+}
