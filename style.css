@@ -20,31 +20,31 @@ body {
 /* Main content container (framed section) */
 .container {
     background-color: #ffffff;       /* White background for framed content */
-    max-width: 1000px;               /* Increased width for a larger frame */
+    max-width: 1200px;               /* Increased width for a broader frame */
     width: 100%;                     /* Allows responsiveness */
     padding: 40px;                   /* Padding inside the container */
     border-radius: 8px;              /* Rounded corners */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for framing effect */
 }
 
-/* Header styling */
+/* Centered header section */
 .header {
-    text-align: left;
+    text-align: center;              /* Centers the profile picture and name */
     padding-bottom: 20px;
     border-bottom: 2px solid #ddd;   /* Subtle bottom border */
     margin-bottom: 30px;
 }
 
 .header h1 {
-    font-size: 2.8em;                /* Larger font size for main title */
+    font-size: 3em;                  /* Larger font size for main title */
     color: #000;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-/* Profile picture styling */
+/* Profile picture styling (no circular border) */
 .profile-pic {
-    width: 100px;                    /* Small profile picture */
+    width: 150px;                    /* Larger profile picture */
     height: auto;
     margin-bottom: 10px;
 }
@@ -61,7 +61,7 @@ body {
 
 /* Section headers (h2) */
 .section h2 {
-    font-size: 2em;                  /* Larger font size for section headers */
+    font-size: 2.2em;                /* Larger font size for section headers */
     font-weight: bold;
     color: #003366;                  /* Dark blue color for emphasis */
     margin-top: 20px;
