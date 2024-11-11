@@ -10,19 +10,19 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #f4f4f9;       /* Light background outside the frame */
-    padding: 40px 20px;              /* Space around the main content frame */
+    padding: 20px;                   /* Reduces padding around the main content */
     display: flex;
     justify-content: center;         /* Centers the content horizontally */
-    align-items: center;             /* Centers the content vertically */
-    min-height: 100vh;               /* Ensures full viewport height */
+    align-items: flex-start;         /* Aligns content to the top of the page */
+    min-height: 100vh;
 }
 
 /* Main content container (framed section) */
 .container {
     background-color: #ffffff;       /* White background for framed content */
-    max-width: 800px;                /* Limits width for readability */
+    max-width: 1000px;               /* Increased width for a larger frame */
     width: 100%;                     /* Allows responsiveness */
-    padding: 40px;                   /* Adds padding inside the container */
+    padding: 40px;                   /* Padding inside the container */
     border-radius: 8px;              /* Rounded corners */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for framing effect */
 }
@@ -36,7 +36,7 @@ body {
 }
 
 .header h1 {
-    font-size: 2.5em;                /* Main title font size */
+    font-size: 2.8em;                /* Larger font size for main title */
     color: #000;
     font-weight: normal;
     margin-bottom: 10px;
@@ -44,7 +44,7 @@ body {
 
 /* Profile picture styling */
 .profile-pic {
-    width: 80px;                     /* Small profile picture */
+    width: 100px;                    /* Small profile picture */
     height: auto;
     margin-bottom: 10px;
 }
@@ -61,7 +61,7 @@ body {
 
 /* Section headers (h2) */
 .section h2 {
-    font-size: 1.8em;                /* Section header font size */
+    font-size: 2em;                  /* Larger font size for section headers */
     font-weight: bold;
     color: #003366;                  /* Dark blue color for emphasis */
     margin-top: 20px;
@@ -70,7 +70,7 @@ body {
 
 /* Paragraph styling */
 p {
-    font-size: 1.1em;                /* Body text font size */
+    font-size: 1.2em;                /* Slightly larger font for readability */
     color: #333;
     margin-bottom: 15px;
     line-height: 1.6;                /* Comfortable line spacing */
@@ -84,7 +84,7 @@ ul {
 }
 
 ul li {
-    font-size: 1.1em;                /* List item font size */
+    font-size: 1.2em;                /* Increased font size for list items */
     color: #333;
     margin-bottom: 8px;
 }
@@ -106,7 +106,7 @@ a:hover {
 }
 
 .content p {
-    font-size: 1.5em;                /* Heading font size for content section */
+    font-size: 1.8em;                /* Increased font size for sub-heading */
     font-weight: bold;
     color: #003366;
     margin-bottom: 15px;
@@ -115,7 +115,7 @@ a:hover {
 /* Travel picture styling */
 .travel-pic {
     width: 100%;
-    max-width: 500px;                /* Limits maximum width for image */
+    max-width: 600px;                /* Limits maximum width for image */
     height: auto;                    /* Keeps natural aspect ratio */
     border-radius: 4px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
