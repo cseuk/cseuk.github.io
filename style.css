@@ -38,7 +38,7 @@ header p {
 
 /* Profile picture styling */
 .profile-pic {
-    width: 80px;                /* Keeps profile picture small */
+    width: 160px;                /* Keeps profile picture small */
     height: auto;
     margin-bottom: 10px;
 }
@@ -61,7 +61,7 @@ header p {
 /* Section headers */
 h2 {
     color: #000;                /* Black color for section headers */
-    font-size: 1.8em;           /* Large font size for section headers */
+    font-size: 2.0em;           /* Large font size for section headers */
     margin-bottom: 15px;
     font-weight: normal;
 }
@@ -69,7 +69,7 @@ h2 {
 /* Paragraphs and lists */
 p, ul {
     margin-bottom: 15px;
-    font-size: 1.1em;           /* Increases font size slightly for body text */
+    font-size: 2.0em;           /* Increases font size slightly for body text */
 }
 
 ul {
@@ -114,9 +114,10 @@ a:hover {
 }
 
 .travel-pic {
-    width: 250px;               /* Moderate width for the travel picture */
-    height: 180px;              /* Sets a specific height */
-    object-fit: cover;          /* Crops to fit within set dimensions */
-    border-radius: 4px;         /* Slightly rounded corners */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
+    width: 250px;
+    height: 180px;
+    object-fit: contain;        /* Fits the whole image within the dimensions */
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;  /* Optional: adds a background color to fill empty space */
 }
