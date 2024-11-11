@@ -8,11 +8,11 @@
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
-    color: #000;
-    max-width: 800px;           /* Keeps content centered and narrow for readability */
+    color: #333;
+    background-color: #ffffff;
+    max-width: 1000px;           /* Increased width for better readability */
     margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff;  /* Pure white background */
     line-height: 1.8;
 }
 
@@ -23,67 +23,57 @@ header {
 }
 
 header h1 {
-    font-size: 2.8em;           /* Large font size for header */
-    color: #000;                /* Black color for main header */
-    margin: 20px 0 10px;
+    font-size: 2.5em;            /* Large font size for header */
+    color: #000;
     font-weight: normal;
+    margin-bottom: 10px;
 }
 
 header p {
     font-style: italic;
-    color: #555;                /* Dark grey for subtitle */
-    font-size: 1.2em;           /* Slightly larger font size for readability */
+    color: #666;
+    font-size: 1.2em;
     margin-bottom: 15px;
 }
 
 /* Profile picture styling */
 .profile-pic {
-    width: 160px;                /* Keeps profile picture small */
+    width: 60px;                 /* Keeps profile picture small */
     height: auto;
     margin-bottom: 10px;
 }
 
 /* Section styling */
 .intro, .research, .teaching, .seminars {
-    margin-bottom: 30px;
-    padding: 15px 0;            /* Adds vertical padding for spacing */
-    text-align: left;           /* Left-aligns content within sections */
-    border-bottom: 1px solid #ccc; /* Light grey bottom border for separation */
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-.intro:last-of-type, 
-.research:last-of-type, 
-.teaching:last-of-type, 
-.seminars:last-of-type {
-    border-bottom: none;        /* Removes border on the last section */
-}
-
-/* Section headers */
+/* Section headers (h2) */
 h2 {
-    color: #000;                /* Black color for section headers */
-    font-size: 2.0em;           /* Large font size for section headers */
-    margin-bottom: 15px;
+    font-size: 1.8em;            /* Larger font size for section headers */
+    color: #003366;
     font-weight: normal;
-}
-
-/* Paragraphs and lists */
-p, ul {
-    margin-bottom: 15px;
-    font-size: 2.0em;           /* Increases font size slightly for body text */
-}
-
-ul {
-    list-style-type: disc;      /* Standard bullet points */
-    padding-left: 20px;         /* Adds left padding for indentation */
-}
-
-ul li {
+    margin-top: 20px;
     margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Paragraphs and main body text */
+p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 1.6;
 }
 
 /* Link styling */
 a {
-    color: #0000ee;             /* Blue color for links */
+    color: #0000ee;
     text-decoration: none;
 }
 
@@ -91,7 +81,20 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Styling for PDF links */
+/* List styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Styling for PDF links within lists or paragraphs */
 .pdf-links a {
     color: #0000ee;
     text-decoration: none;
@@ -102,22 +105,20 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Different styling for 'Download' links */
 .pdf-links a[download] {
-    color: #d9534f;             /* Distinct color for download links */
+    color: #d9534f;
 }
 
-/* Travel picture styling */
+/* Center and style the smaller travel picture */
 .large-picture {
     text-align: center;
     margin: 20px auto;
 }
 
 .travel-pic {
-    width: 250px;
-    height: 180px;
-    object-fit: contain;        /* Fits the whole image within the dimensions */
-    border-radius: 4px;
+    width: 200px;                /* Sets a smaller fixed width */
+    height: auto;                /* Maintains aspect ratio */
+    border-radius: 4px;          /* Slightly rounded corners */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;  /* Optional: adds a background color to fill empty space */
+    margin-top: 10px;
 }
