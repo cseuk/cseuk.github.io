@@ -126,18 +126,22 @@ ul li {
     color: #d9534f;                 /* Distinct color for download links */
 }
 
-/* Travel picture styling */
-.large-picture {
-    text-align: center;
-    margin: 30px 0;
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;        /* Aligns items at the top */
+}
+
+.text-content {
+    width: 60%;                     /* Sets width of text content */
 }
 
 .travel-pic {
-    width: 80%;                     /* Sets the image width to 80% of its container */
-    max-width: 100px;               /* Limits the maximum width to 400px */
-    height: 150;                   /* Maintains the image's natural aspect ratio */
-    border-radius: 4px;             /* Slightly rounded corners */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    margin-top: 10px;
+    width: 30%;                     /* Sets the image width relative to content */
+    max-width: 300px;               /* Limits the maximum width of the image */
+    height: auto;                   /* Maintains aspect ratio */
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;              /* Adds space between text and image */
 }
 
