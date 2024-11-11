@@ -10,20 +10,20 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.8;
     color: #333;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f9f9f9;
-    text-align: center;
 }
 
 /* Header styling */
 header {
-    margin-bottom: 30px;
+    text-align: center;           /* Centers the profile and main header */
+    margin-bottom: 40px;
 }
 
 header h1 {
-    font-size: 3em;           /* Larger font size for main header */
+    font-size: 3.5em;             /* Larger font size for main header */
     color: #333;
     margin: 15px 0;
 }
@@ -31,40 +31,41 @@ header h1 {
 header p {
     font-style: italic;
     color: #666;
-    font-size: 1.5em;         /* Slightly larger font size for subtitle */
-    margin-bottom: 15px;
+    font-size: 1.8em;             /* Increases font size for subtitle */
+    margin-bottom: 20px;
 }
 
 /* Profile picture styling */
 .profile-pic {
-    width: 70px;                /* Smaller profile picture */
+    width: 100px;                  /* Smaller profile picture */
     height: auto;
     margin-bottom: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Section styling */
-.intro, .research, .teaching, .seminars {
-    margin-bottom: 25px;
-    padding: 15px;
+.intro, .Projects, .teaching, .seminars {
+    margin-bottom: 30px;
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: left;             /* Left-aligns content within each section */
 }
 
 /* Section headers */
 h2 {
     color: #003366;
-    margin-bottom: 10px;
-    font-size: 2em;           /* Larger font size for section headers */
-    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.5em;             /* Larger font size for section headers */
+    text-align: center;           /* Centers section headers */
 }
 
 /* Paragraphs and lists */
 p, ul {
-    margin-bottom: 15px;
-    font-size: 1.3em;         /* Increases font size for body text */
+    margin-bottom: 20px;
+    font-size: 1.5em;             /* Increases font size for body text */
+    text-align: left;             /* Left-aligns all body content */
 }
 
 /* Link styling */
@@ -84,7 +85,7 @@ ul {
 }
 
 ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 /* Styling for PDF links */
@@ -103,16 +104,16 @@ ul li {
     color: #d9534f;
 }
 
-/* Center and style the large picture in the body */
+/* Center and style the small travel picture in the body */
 .large-picture {
     text-align: center;
     margin: 20px auto;
 }
 
 .travel-pic {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 200px;                 /* Sets a smaller fixed width */
+    height: 150px;                /* Sets a smaller fixed height */
+    object-fit: cover;            /* Crops and fits the image within the set dimensions */
+    border-radius: 8px;           /* Adds rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
