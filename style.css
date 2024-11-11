@@ -1,4 +1,5 @@
 /* Reset default styling */
+/* Reset default styling */
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +10,15 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #ffffff;  /* White background for clean look */
+    background-color: #ffffff;       /* White background for clean look */
     padding: 20px;
     line-height: 1.8;
-    width: 100vw;               /* Full viewport width */
-    overflow-x: hidden;         /* Prevent horizontal scroll bar */
+    max-width: 900px;                /* Limits the maximum width for a framed look */
+    margin: 0 auto;                  /* Centers the body content */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for a framed effect */
+    border-radius: 8px;              /* Optional: rounded corners */
 }
+
 
 /* Main header (h1) */
 header {
@@ -60,14 +64,26 @@ header p {
 }
 
 /* Section headers (h2) */
+h/* Styling for all h2 section headers */
 h2 {
-    font-size: 2em;                 /* Large font size for section headers */
-    color: #003366;                 /* Dark blue color */
-    font-weight: normal;
+    font-size: 2.2em;            /* Large font size */
+    font-weight: bold;           /* Bold text */
+    color: #003366;              /* Dark blue color for emphasis */
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: left;
 }
+
+/* Additional styling for specific paragraphs to act as headings */
+.text-content p {
+    font-size: 2em;              /* Large font size for visual importance */
+    font-weight: bold;           /* Bold text */
+    color: #003366;              /* Same color for consistency */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
 
 /* Subheadings within sections (h3) */
 h3 {
@@ -127,21 +143,27 @@ ul li {
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;        /* Aligns items at the top */
+    width: 100%;                       /* Full width to match body content */
+    max-width: 600px;                  /* Sets a maximum width for a balanced look */
+    margin: 40px auto 0 auto;          /* Centers content and adds top margin for spacing */
+    text-align: center;                /* Centers the text and image within the container */
 }
 
-.text-content {
-    width: 60%;                     /* Sets width of text content */
+/* Styling for the "A Path to Performance" heading */
+.text-content p {
+    font-size: 1.8em;                  /* Increases font size for emphasis */
+    font-weight: bold;
+    color: #003366;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
+/* Styling for the travel-pic */
 .travel-pic {
-    width: 30%;                     /* Sets the image width relative to content */
-    max-width: 300px;               /* Limits the maximum width of the image */
-    height: auto;                   /* Maintains aspect ratio */
+    width: 100%;                       /* Ensures the image fits within the content width */
+    max-width: 500px;                  /* Limits maximum width for the image */
+    height: auto;                      /* Maintains aspect ratio */
     border-radius: 4px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;              /* Adds space between text and image */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds shadow for emphasis */
+    margin-top: 10px;
 }
-
