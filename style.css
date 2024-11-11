@@ -20,7 +20,7 @@ body {
 /* Main content container (framed section) */
 .container {
     background-color: #ffffff;       /* White background for framed content */
-    max-width: 1200px;               /* Increased width for a broader frame */
+    max-width: 1600px;               /* Increased width for a broader frame */
     width: 100%;                     /* Allows responsiveness */
     padding: 40px;                   /* Padding inside the container */
     border-radius: 8px;              /* Rounded corners */
