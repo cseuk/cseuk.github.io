@@ -1,5 +1,4 @@
 /* Reset default styling */
-/* Reset default styling */
 * {
     margin: 0;
     padding: 0;
@@ -10,98 +9,84 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #ffffff;       /* White background for clean look */
-    padding: 20px;
-    line-height: 1.8;
-    max-width: 900px;                /* Limits the maximum width for a framed look */
-    margin: 0 auto;                  /* Centers the body content */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for a framed effect */
-    border-radius: 8px;              /* Optional: rounded corners */
+    background-color: #f4f4f9;       /* Light background outside the frame */
+    padding: 40px 20px;              /* Space around the main content frame */
+    display: flex;
+    justify-content: center;         /* Centers the content horizontally */
+    align-items: center;             /* Centers the content vertically */
+    min-height: 100vh;               /* Ensures full viewport height */
 }
 
+/* Main content container (framed section) */
+.container {
+    background-color: #ffffff;       /* White background for framed content */
+    max-width: 800px;                /* Limits width for readability */
+    width: 100%;                     /* Allows responsiveness */
+    padding: 40px;                   /* Adds padding inside the container */
+    border-radius: 8px;              /* Rounded corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for framing effect */
+}
 
-/* Main header (h1) */
-header {
+/* Header styling */
+.header {
     text-align: left;
     padding-bottom: 20px;
-    border-bottom: 2px solid #ddd;  /* Subtle bottom border */
+    border-bottom: 2px solid #ddd;   /* Subtle bottom border */
     margin-bottom: 30px;
 }
 
-header h1 {
-    font-size: 4.0em;               /* Large font size for header */
+.header h1 {
+    font-size: 2.5em;                /* Main title font size */
     color: #000;
     font-weight: normal;
     margin-bottom: 10px;
 }
 
-header p {
-    font-style: italic;
-    color: #666;                    /* Dark grey for subtitle */
-    font-size: 4.0em;
-    margin-bottom: 15px;
-}
-
 /* Profile picture styling */
 .profile-pic {
-    width: 100px;                    /* Small profile picture */
+    width: 80px;                     /* Small profile picture */
     height: auto;
     margin-bottom: 10px;
 }
 
 /* Section styling */
-.intro, .research, .teaching, .seminars {
-    padding: 20px 0;                /* Padding for space within sections */
-    border-bottom: 1px solid #ddd;  /* Light border between sections */
-    text-align: left;               /* Left-aligned content */
+.section {
+    padding: 20px 0;                 /* Padding within each section */
+    border-bottom: 1px solid #ddd;   /* Light border between sections */
 }
 
-.intro:last-of-type, 
-.research:last-of-type, 
-.teaching:last-of-type, 
-.seminars:last-of-type {
-    border-bottom: none;            /* No border on the last section */
+.section:last-of-type {
+    border-bottom: none;             /* No border on the last section */
 }
 
 /* Section headers (h2) */
-h/* Styling for all h2 section headers */
-h2 {
-    font-size: 2.2em;            /* Large font size */
-    font-weight: bold;           /* Bold text */
-    color: #003366;              /* Dark blue color for emphasis */
+.section h2 {
+    font-size: 1.8em;                /* Section header font size */
+    font-weight: bold;
+    color: #003366;                  /* Dark blue color for emphasis */
     margin-top: 20px;
     margin-bottom: 15px;
-    text-align: left;
 }
 
-/* Additional styling for specific paragraphs to act as headings */
-.text-content p {
-    font-size: 2em;              /* Large font size for visual importance */
-    font-weight: bold;           /* Bold text */
-    color: #003366;              /* Same color for consistency */
-    margin-top: 20px;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-
-/* Subheadings within sections (h3) */
-h3 {
-    font-size: 1.5em;               /* Medium size for subheadings */
-    color: #333;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-weight: normal;
-    text-align: left;
-}
-
-/* Paragraphs and main body text */
+/* Paragraph styling */
 p {
-    font-size: 3.0em;               /* Slightly larger for readability */
+    font-size: 1.1em;                /* Body text font size */
     color: #333;
     margin-bottom: 15px;
-    text-align: left;
-    line-height: 1.6;
+    line-height: 1.6;                /* Comfortable line spacing */
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    font-size: 1.1em;                /* List item font size */
+    color: #333;
+    margin-bottom: 8px;
 }
 
 /* Link styling */
@@ -114,56 +99,25 @@ a:hover {
     text-decoration: underline;
 }
 
-/* List styling */
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 15px;
-}
-
-ul li {
-    font-size: 3.0em;               /* Slightly larger list items */
-    color: #333;
-    margin-bottom: 8px;
-}
-
-/* Styling for PDF links within lists or paragraphs */
-.pdf-links a {
-    color: #0000ee;
-    text-decoration: none;
-    margin-right: 5px;
-}
-
-.pdf-links a:hover {
-    text-decoration: underline;
-}
-
-.pdf-links a[download] {
-    color: #d9534f;                 /* Distinct color for download links */
-}
-
+/* Centered content section (e.g., "A Path to Performance" section) */
 .content {
-    width: 100%;                       /* Full width to match body content */
-    max-width: 600px;                  /* Sets a maximum width for a balanced look */
-    margin: 40px auto 0 auto;          /* Centers content and adds top margin for spacing */
-    text-align: center;                /* Centers the text and image within the container */
+    text-align: center;              /* Centers text and image inside */
+    margin-top: 40px;
 }
 
-/* Styling for the "A Path to Performance" heading */
-.text-content p {
-    font-size: 1.8em;                  /* Increases font size for emphasis */
+.content p {
+    font-size: 1.5em;                /* Heading font size for content section */
     font-weight: bold;
     color: #003366;
-    margin-top: 0;
     margin-bottom: 15px;
 }
 
-/* Styling for the travel-pic */
+/* Travel picture styling */
 .travel-pic {
-    width: 100%;                       /* Ensures the image fits within the content width */
-    max-width: 500px;                  /* Limits maximum width for the image */
-    height: auto;                      /* Maintains aspect ratio */
+    width: 100%;
+    max-width: 500px;                /* Limits maximum width for image */
+    height: auto;                    /* Keeps natural aspect ratio */
     border-radius: 4px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds shadow for emphasis */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-top: 10px;
 }
