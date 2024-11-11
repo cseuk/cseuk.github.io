@@ -44,7 +44,7 @@ body {
 
 /* Profile picture styling (no circular border) */
 .profile-pic {
-    width: 150px;                    /* Larger profile picture */
+    width: 200px;                    /* Larger profile picture */
     height: auto;
     margin-bottom: 10px;
 }
