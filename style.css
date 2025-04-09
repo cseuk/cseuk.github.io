@@ -1,0 +1,124 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;       /* Light background outside the frame */
+    padding: 20px;                   /* Reduces padding around the main content */
+    display: flex;
+    justify-content: center;         /* Centers the content horizontally */
+    align-items: flex-start;         /* Aligns content to the top of the page */
+    min-height: 100vh;
+}
+
+/* Main content container (framed section) */
+.container {
+    background-color: #ffffff;       /* White background for framed content */
+    max-width: 1600px;               /* Increased width for a broader frame */
+    width: 100%;                     /* Allows responsiveness */
+    padding: 40px;                   /* Padding inside the container */
+    border-radius: 8px;              /* Rounded corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for framing effect */
+}
+
+/* Centered header section */
+.header {
+    text-align: center;              /* Centers the profile picture and name */
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;   /* Subtle bottom border */
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 3em;                  /* Larger font size for main title */
+    color: #000;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Profile picture styling (no circular border) */
+.profile-pic {
+    width: 200px;                    /* Larger profile picture */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Section styling */
+.section {
+    padding: 20px 0;                 /* Padding within each section */
+    border-bottom: 1px solid #ddd;   /* Light border between sections */
+}
+
+.section:last-of-type {
+    border-bottom: none;             /* No border on the last section */
+}
+
+/* Section headers (h2) */
+.section h2 {
+    text-align: center;
+    font-size: 2.2em;                /* Larger font size for section headers */
+    font-weight: bold;
+    color: #003366;                  /* Dark blue color for emphasis */
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2em;                /* Slightly larger font for readability */
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;                /* Comfortable line spacing */
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    font-size: 1.2em;                /* Increased font size for list items */
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Link styling */
+a {
+    color: #0000ee;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Centered content section (e.g., "A Path to Performance" section) */
+.content {
+    text-align: center;              /* Centers text and image inside */
+    margin-top: 40px;
+}
+
+.content p {
+    font-size: 1.8em;                /* Increased font size for sub-heading */
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+/* Travel picture styling */
+.travel-pic {
+    width: 100%;
+    max-width: 600px;                /* Limits maximum width for image */
+    height: auto;                    /* Keeps natural aspect ratio */
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 10px;
+}
