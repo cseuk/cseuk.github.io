@@ -1,0 +1,49 @@
+baseURL: "https://cseuk.github.io/"
+title: "changyoonseuk"
+theme: "PaperMod"
+languageCode: "en"
+enableRobotsTXT: true
+
+params:
+  env: production
+  author: "Chang Yoon Seuk"
+  description: "Mathematics"
+  defaultTheme: light
+  disableThemeToggle: true
+  copyright: "© 2026 Changyoon Seuk"
+
+  profileMode:
+    enabled: true
+    title: "Chang Yoon Seuk"
+    subtitle: | 
+      B.A. Mathematics, Columbia University (May 2025).  
+      Research interests: applied analysis with a strong background in complex geometry.
+    imageUrl: "/images/IMG_1952.jpg"
+    imageWidth: 375
+    imageHeight: 360
+    buttons:
+      - name: About
+        url: "/about/"
+      - name: Expository Articles
+        url: "/writings/"
+      - name: Miscellaneous
+        url: "/miscellaneous/"
+      #name: CV
+      #url: "/pdfs/CV.pdf"
+      - name: Email
+        url: "mailto:cs4056@columbia.edu"
+
+menu:
+  main:
+    - name: About
+      url: "/about/"
+      weight: 1
+    - name: Expository Articles
+      url: "/writings/"
+      weight: 2
+    - name: Miscellaneous
+      url: "/miscellaneous/"
+      weight: 3
+    - name: Teaching
+      url: "/teaching/"
+      weight: 4
