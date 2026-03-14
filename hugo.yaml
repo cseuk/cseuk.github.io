@@ -26,8 +26,8 @@ params:
         url: "/about/"
       - name: Expository Articles
         url: "/writings/"
-      - name: Miscellaneous
-        url: "/miscellaneous/"
+      - name: Blog
+        url: "/blog/"
       #name: CV
       #url: "/pdfs/CV.pdf"
       - name: Email
@@ -41,8 +41,8 @@ menu:
     - name: Expository Articles
       url: "/writings/"
       weight: 2
-    - name: Miscellaneous
-      url: "/miscellaneous/"
+    - name: Blog
+      url: "/blog/"
       weight: 3
     - name: Teaching
       url: "/teaching/"
